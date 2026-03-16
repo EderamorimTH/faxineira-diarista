@@ -27,39 +27,39 @@ body {
 header {
   background: linear-gradient(135deg, #00aaff, #0077cc);
   color: white;
-  padding: 0;
   text-align: center;
 }
 .logo-banner {
   width: 100%;
+  max-height: 160px;           /* ← Principal ajuste: menor e mais amigável */
   height: auto;
   display: block;
-  max-height: 280px;          /* ← Ajuste aqui a altura máxima da logo/banner */
-  object-fit: cover;          /* mantém proporção, corta se necessário */
+  object-fit: contain;         /* Mostra a logo inteira sem esticar ou cortar */
   object-position: center;
+  background: #ffffff;         /* Fundo branco para destacar melhor a logo (opcional, pode remover) */
+  padding: 15px 0;             /* Espacinho interno suave */
 }
 .header-content {
-  padding: 40px 20px 60px;
-  background: rgba(0, 0, 0, 0.15); /* leve escurecimento opcional para legibilidade */
+  padding: 30px 20px 50px;     /* Menos espaço em cima e embaixo */
 }
 .header-content h1 {
-  font-size: 2.8rem;
-  margin-bottom: 16px;
+  font-size: 2.6rem;
+  margin-bottom: 12px;
 }
 .header-content p {
-  font-size: 1.3rem;
-  margin-bottom: 30px;
+  font-size: 1.25rem;
+  margin-bottom: 25px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 .btn {
   display: inline-block;
-  padding: 16px 34px;
+  padding: 14px 30px;
   border-radius: 40px;
   text-decoration: none;
   font-weight: 600;
-  margin: 10px;
+  margin: 8px;
 }
 .btn-whatsapp {
   background: #25D366;
@@ -70,12 +70,12 @@ header {
   color: #0077cc;
 }
 section {
-  padding: 80px 0;
+  padding: 70px 0;
 }
 h2 {
   text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 50px;
+  font-size: 2.1rem;
+  margin-bottom: 45px;
 }
 .grid {
   display: grid;
@@ -123,7 +123,7 @@ h2 {
   background: linear-gradient(135deg, #00aaff, #0077cc);
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 70px 20px;
 }
 footer {
   background: #111;
@@ -143,13 +143,13 @@ footer {
 /* Responsividade */
 @media (max-width: 768px) {
   .logo-banner {
-    max-height: 180px;        /* menor no celular */
+    max-height: 120px;         /* Ainda menor no celular */
   }
   .header-content {
-    padding: 30px 15px 50px;
+    padding: 25px 15px 40px;
   }
   .header-content h1 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
   .header-content p {
     font-size: 1.1rem;
