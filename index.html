@@ -27,19 +27,15 @@ body {
 header {
   background: linear-gradient(135deg, #00aaff, #0077cc);
   color: white;
-  padding: 50px 20px 70px;
+  padding: 40px 20px 60px;
   text-align: center;
 }
 .logo {
-  max-width: 300px;              /* Tamanho bom para ver detalhes sem exagerar */
   width: 100%;
+  max-width: 280px;               /* Tamanho bom e visível */
   height: auto;
   display: block;
-  margin: 0 auto 30px auto;      /* Centraliza e dá espaço abaixo */
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-  background: white;             /* Fundo branco ajuda a destacar a logo */
-  padding: 15px;
+  margin: 0 auto 20px auto;       /* Espaço reduzido entre logo e título */
 }
 header h1 {
   font-size: 2.8rem;
@@ -148,14 +144,13 @@ footer {
 @media (max-width: 768px) {
   .logo {
     max-width: 220px;           /* Menor no celular, mas ainda visível */
-    margin-bottom: 25px;
-    padding: 12px;
+    margin-bottom: 15px;        /* Ainda mais próximo do título */
   }
   header {
-    padding: 40px 15px 60px;
+    padding: 30px 15px 50px;
   }
   header h1 {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
   header p {
     font-size: 1.15rem;
