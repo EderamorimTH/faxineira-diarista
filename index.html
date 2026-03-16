@@ -27,55 +27,59 @@ body {
 header {
   background: linear-gradient(135deg, #00aaff, #0077cc);
   color: white;
+  padding: 50px 20px 70px;
   text-align: center;
 }
-.logo-banner {
+.logo {
+  max-width: 300px;              /* Tamanho bom para ver detalhes sem exagerar */
   width: 100%;
-  max-height: 160px;           /* ← Principal ajuste: menor e mais amigável */
   height: auto;
   display: block;
-  object-fit: contain;         /* Mostra a logo inteira sem esticar ou cortar */
-  object-position: center;
-  background: #ffffff;         /* Fundo branco para destacar melhor a logo (opcional, pode remover) */
-  padding: 15px 0;             /* Espacinho interno suave */
+  margin: 0 auto 30px auto;      /* Centraliza e dá espaço abaixo */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  background: white;             /* Fundo branco ajuda a destacar a logo */
+  padding: 15px;
 }
-.header-content {
-  padding: 30px 20px 50px;     /* Menos espaço em cima e embaixo */
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
 }
-.header-content h1 {
-  font-size: 2.6rem;
-  margin-bottom: 12px;
-}
-.header-content p {
-  font-size: 1.25rem;
-  margin-bottom: 25px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+header p {
+  font-size: 1.3rem;
+  max-width: 720px;
+  margin: 0 auto 35px;
 }
 .btn {
   display: inline-block;
-  padding: 14px 30px;
-  border-radius: 40px;
+  padding: 16px 36px;
+  border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
-  margin: 8px;
+  margin: 10px 5px;
+  transition: 0.3s;
 }
 .btn-whatsapp {
   background: #25D366;
   color: white;
 }
+.btn-whatsapp:hover {
+  background: #1ebe52;
+}
 .btn-white {
   background: white;
   color: #0077cc;
+}
+.btn-white:hover {
+  background: #f0f0f0;
 }
 section {
   padding: 70px 0;
 }
 h2 {
   text-align: center;
-  font-size: 2.1rem;
-  margin-bottom: 45px;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
 }
 .grid {
   display: grid;
@@ -123,7 +127,7 @@ h2 {
   background: linear-gradient(135deg, #00aaff, #0077cc);
   color: white;
   text-align: center;
-  padding: 70px 20px;
+  padding: 80px 20px;
 }
 footer {
   background: #111;
@@ -142,17 +146,19 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .logo-banner {
-    max-height: 120px;         /* Ainda menor no celular */
+  .logo {
+    max-width: 220px;           /* Menor no celular, mas ainda visível */
+    margin-bottom: 25px;
+    padding: 12px;
   }
-  .header-content {
-    padding: 25px 15px 40px;
+  header {
+    padding: 40px 15px 60px;
   }
-  .header-content h1 {
-    font-size: 2.1rem;
+  header h1 {
+    font-size: 2.3rem;
   }
-  .header-content p {
-    font-size: 1.1rem;
+  header p {
+    font-size: 1.15rem;
   }
 }
 </style>
@@ -160,24 +166,22 @@ footer {
 <body>
 
 <header>
-  <img src="logol.png" alt="Limpeza Certa - Faxina Profissional em Cuiabá" class="logo-banner">
+  <div class="container">
+    <img src="logol.png" alt="Limpeza Certa - Faxina Profissional em Cuiabá" class="logo">
 
-  <div class="header-content">
-    <div class="container">
-      <h1>Faxina Profissional em Cuiabá</h1>
-      <p>
-        Diarista e limpeza residencial em Cuiabá e Várzea Grande.<br>
-        Profissionais confiáveis e atendimento rápido.
-      </p>
-      
-      <div>
-        <a href="https://wa.me/55SEUNUMERO" class="btn btn-whatsapp">
-          Agendar pelo WhatsApp
-        </a>
-        <a href="tel:+5565SEUNUMERO" class="btn btn-white">
-          Ligar Agora
-        </a>
-      </div>
+    <h1>Faxina Profissional em Cuiabá</h1>
+    <p>
+      Diarista e limpeza residencial em Cuiabá e Várzea Grande.<br>
+      Profissionais confiáveis e atendimento rápido.
+    </p>
+    
+    <div>
+      <a href="https://wa.me/55SEUNUMERO" class="btn btn-whatsapp">
+        Agendar pelo WhatsApp
+      </a>
+      <a href="tel:+5565SEUNUMERO" class="btn btn-white">
+        Ligar Agora
+      </a>
     </div>
   </div>
 </header>
