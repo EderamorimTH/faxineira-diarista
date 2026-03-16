@@ -1,312 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Faxina em Cuiabá | Diarista e Limpeza Residencial | Limpeza Certa</title>
-
 <meta name="description" content="Precisa de faxina em Cuiabá? A Limpeza Certa oferece limpeza residencial, diarista e limpeza pesada em Cuiabá e Várzea Grande. Orçamento rápido pelo WhatsApp.">
-
 <meta name="keywords" content="faxina Cuiabá, diarista Cuiabá, limpeza residencial Cuiabá, limpeza pesada Cuiabá, faxina Várzea Grande">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f6f9fc;
+  color: #222;
+  line-height: 1.6;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+header {
+  background: linear-gradient(135deg, #00aaff, #0077cc);
+  color: white;
+  padding: 0;
+  text-align: center;
+}
+.logo-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 280px;          /* ← Ajuste aqui a altura máxima da logo/banner */
+  object-fit: cover;          /* mantém proporção, corta se necessário */
+  object-position: center;
+}
+.header-content {
+  padding: 40px 20px 60px;
+  background: rgba(0, 0, 0, 0.15); /* leve escurecimento opcional para legibilidade */
+}
+.header-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+}
+.header-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  display: inline-block;
+  padding: 16px 34px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 10px;
+}
+.btn-whatsapp {
+  background: #25D366;
+  color: white;
+}
+.btn-white {
+  background: white;
+  color: #0077cc;
+}
+section {
+  padding: 80px 0;
+}
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+.card h3 {
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+.problem {
+  background: #eaf4ff;
+  text-align: center;
+}
+.problem p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.2rem;
+}
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+.review {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.review span {
+  color: gold;
+}
+.cta {
+  background: linear-gradient(135deg, #00aaff, #0077cc);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+.whatsapp img {
+  width: 60px;
 }
 
-body{
-font-family:'Poppins',sans-serif;
-background:#f6f9fc;
-color:#222;
-line-height:1.6;
+/* Responsividade */
+@media (max-width: 768px) {
+  .logo-banner {
+    max-height: 180px;        /* menor no celular */
+  }
+  .header-content {
+    padding: 30px 15px 50px;
+  }
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
+  .header-content p {
+    font-size: 1.1rem;
+  }
 }
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:20px;
-}
-
-header{
-background:linear-gradient(135deg,#00aaff,#0077cc);
-color:white;
-padding:140px 20px;
-text-align:center;
-}
-
-header h1{
-font-size:3rem;
-margin-bottom:20px;
-}
-
-header p{
-font-size:1.3rem;
-margin-bottom:40px;
-}
-
-.btn{
-display:inline-block;
-padding:16px 34px;
-border-radius:40px;
-text-decoration:none;
-font-weight:600;
-margin:10px;
-}
-
-.btn-whatsapp{
-background:#25D366;
-color:white;
-}
-
-.btn-white{
-background:white;
-color:#0077cc;
-}
-
-section{
-padding:80px 0;
-}
-
-h2{
-text-align:center;
-font-size:2.2rem;
-margin-bottom:50px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-margin-bottom:10px;
-color:#0077cc;
-}
-
-.problem{
-background:#eaf4ff;
-text-align:center;
-}
-
-.problem p{
-max-width:700px;
-margin:auto;
-font-size:1.2rem;
-}
-
-.reviews{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.review{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-.review span{
-color:gold;
-}
-
-.cta{
-background:linear-gradient(135deg,#00aaff,#0077cc);
-color:white;
-text-align:center;
-padding:80px 20px;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:40px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-}
-
-.whatsapp img{
-width:60px;
-}
-
 </style>
-
 </head>
-
 <body>
 
 <header>
+  <img src="logol.png" alt="Limpeza Certa - Faxina Profissional em Cuiabá" class="logo-banner">
 
-<div class="container">
-
-<h1>Faxina Profissional em Cuiabá</h1>
-
-<p>
-Diarista e limpeza residencial em Cuiabá e Várzea Grande.
-Profissionais confiáveis e atendimento rápido.
-</p>
-
-<a href="https://wa.me/55SEUNUMERO" class="btn btn-whatsapp">
-Agendar pelo WhatsApp
-</a>
-
-<a href="tel:+5565SEUNUMERO" class="btn btn-white">
-Ligar Agora
-</a>
-
-</div>
-
+  <div class="header-content">
+    <div class="container">
+      <h1>Faxina Profissional em Cuiabá</h1>
+      <p>
+        Diarista e limpeza residencial em Cuiabá e Várzea Grande.<br>
+        Profissionais confiáveis e atendimento rápido.
+      </p>
+      
+      <div>
+        <a href="https://wa.me/55SEUNUMERO" class="btn btn-whatsapp">
+          Agendar pelo WhatsApp
+        </a>
+        <a href="tel:+5565SEUNUMERO" class="btn btn-white">
+          Ligar Agora
+        </a>
+      </div>
+    </div>
+  </div>
 </header>
 
 <section class="problem">
-
-<div class="container">
-
-<h2>Sem tempo para limpar sua casa?</h2>
-
-<p>
-A rotina corrida deixa a casa acumulando sujeira.
-Nossa equipe resolve isso com faxina profissional completa.
-</p>
-
-</div>
-
+  <div class="container">
+    <h2>Sem tempo para limpar sua casa?</h2>
+    <p>
+      A rotina corrida deixa a casa acumulando sujeira.<br>
+      Nossa equipe resolve isso com faxina profissional completa.
+    </p>
+  </div>
 </section>
 
 <section>
-
-<div class="container">
-
-<h2>Nossos Serviços</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Faxina Residencial</h3>
-<p>Limpeza completa para casas e apartamentos em Cuiabá.</p>
-</div>
-
-<div class="card">
-<h3>Limpeza Pesada</h3>
-<p>Ideal para casas muito sujas ou mudança.</p>
-</div>
-
-<div class="card">
-<h3>Limpeza Pós Obra</h3>
-<p>Remoção de poeira e resíduos de construção.</p>
-</div>
-
-<div class="card">
-<h3>Diarista</h3>
-<p>Profissionais confiáveis para manutenção da casa.</p>
-</div>
-
-</div>
-
-</div>
-
+  <div class="container">
+    <h2>Nossos Serviços</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Faxina Residencial</h3>
+        <p>Limpeza completa para casas e apartamentos em Cuiabá.</p>
+      </div>
+      <div class="card">
+        <h3>Limpeza Pesada</h3>
+        <p>Ideal para casas muito sujas ou mudança.</p>
+      </div>
+      <div class="card">
+        <h3>Limpeza Pós Obra</h3>
+        <p>Remoção de poeira e resíduos de construção.</p>
+      </div>
+      <div class="card">
+        <h3>Diarista</h3>
+        <p>Profissionais confiáveis para manutenção da casa.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section>
-
-<div class="container">
-
-<h2>O que nossos clientes dizem</h2>
-
-<div class="reviews">
-
-<div class="review">
-<span>★★★★★</span>
-<p>Minha casa ficou impecável!</p>
-<strong>Maria – Cuiabá</strong>
-</div>
-
-<div class="review">
-<span>★★★★★</span>
-<p>Excelente limpeza pesada.</p>
-<strong>João – Várzea Grande</strong>
-</div>
-
-<div class="review">
-<span>★★★★★</span>
-<p>Diarista muito caprichosa.</p>
-<strong>Ana – Cuiabá</strong>
-</div>
-
-</div>
-
-</div>
-
+  <div class="container">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="reviews">
+      <div class="review">
+        <span>★★★★★</span>
+        <p>Minha casa ficou impecável!</p>
+        <strong>Maria – Cuiabá</strong>
+      </div>
+      <div class="review">
+        <span>★★★★★</span>
+        <p>Excelente limpeza pesada.</p>
+        <strong>João – Várzea Grande</strong>
+      </div>
+      <div class="review">
+        <span>★★★★★</span>
+        <p>Diarista muito caprichosa.</p>
+        <strong>Ana – Cuiabá</strong>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section>
-
-<div class="container">
-
-<h2>Atendimento em Cuiabá e Várzea Grande</h2>
-
-<p>
-A Limpeza Certa oferece faxina profissional em toda
-região de Cuiabá e Várzea Grande.
-</p>
-
-</div>
-
+  <div class="container">
+    <h2>Atendimento em Cuiabá e Várzea Grande</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+      A Limpeza Certa oferece faxina profissional em toda região de Cuiabá e Várzea Grande.
+    </p>
+  </div>
 </section>
 
 <section class="cta">
-
-<h2>Agende sua faxina agora</h2>
-
-<p>Orçamento rápido pelo WhatsApp.</p>
-
-<a href="https://wa.me/55SEUNUMERO" class="btn btn-whatsapp">
-Falar no WhatsApp
-</a>
-
+  <div class="container">
+    <h2>Agende sua faxina agora</h2>
+    <p>Orçamento rápido e sem compromisso pelo WhatsApp.</p>
+    <a href="https://wa.me/55SEUNUMERO" class="btn btn-whatsapp">
+      Falar no WhatsApp
+    </a>
+  </div>
 </section>
 
 <footer>
-
-<p>
-© 2026 Limpeza Certa<br>
-Faxina em Cuiabá e Várzea Grande
-</p>
-
+  <p>
+    © 2026 Limpeza Certa<br>
+    Faxina em Cuiabá e Várzea Grande
+  </p>
 </footer>
 
 <div class="whatsapp">
-
-<a href="https://wa.me/55SEUNUMERO">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-</a>
-
+  <a href="https://wa.me/55SEUNUMERO">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
 </div>
 
 </body>
