@@ -1,0 +1,6 @@
+```
+User-agent: *
+Allow: /
+
+Sitemap: https://ederamorimth.github.io/faxineira-diarista/sitemap.xml
+```
