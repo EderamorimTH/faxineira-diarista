@@ -32,15 +32,14 @@ header {
 .logo-full {
   width: 100%;
   height: auto;
-  max-height: 220px;               /* altura máxima - ajuste aqui se quiser mais/menos alto */
+  max-height: 240px;                 /* ← Ajuste aqui a altura máxima da logo */
   display: block;
-  object-fit: contain;             /* mantém proporção, não distorce */
+  object-fit: contain;               /* mantém proporção, não estica nem corta */
   object-position: center;
-  background: transparent;         /* sem fundo branco */
-  margin: 0;
+  background: transparent;
 }
 .header-content {
-  padding: 30px 20px 60px;         /* espaço para o texto e botões */
+  padding: 30px 20px 60px;
 }
 header h1 {
   font-size: 2.8rem;
@@ -148,7 +147,7 @@ footer {
 /* Responsividade */
 @media (max-width: 768px) {
   .logo-full {
-    max-height: 160px;             /* menor no celular para não ocupar muito espaço */
+    max-height: 180px;               /* menor no celular */
   }
   .header-content {
     padding: 25px 15px 50px;
