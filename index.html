@@ -27,15 +27,20 @@ body {
 header {
   background: linear-gradient(135deg, #00aaff, #0077cc);
   color: white;
-  padding: 30px 20px 60px;
   text-align: center;
 }
-.logo {
+.logo-full {
   width: 100%;
-  max-width: 260px;
   height: auto;
+  max-height: 220px;               /* altura máxima - ajuste aqui se quiser mais/menos alto */
   display: block;
-  margin: 0 auto 12px auto;      /* espaço bem pequeno entre logo e título */
+  object-fit: contain;             /* mantém proporção, não distorce */
+  object-position: center;
+  background: transparent;         /* sem fundo branco */
+  margin: 0;
+}
+.header-content {
+  padding: 30px 20px 60px;         /* espaço para o texto e botões */
 }
 header h1 {
   font-size: 2.8rem;
@@ -142,11 +147,10 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .logo {
-    max-width: 200px;
-    margin-bottom: 10px;
+  .logo-full {
+    max-height: 160px;             /* menor no celular para não ocupar muito espaço */
   }
-  header {
+  .header-content {
     padding: 25px 15px 50px;
   }
   header h1 {
@@ -161,22 +165,24 @@ footer {
 <body>
 
 <header>
-  <div class="container">
-    <img src="logol.png" alt="Limpeza Certa - Faxina Profissional em Cuiabá" class="logo">
+  <img src="logol.png" alt="Limpeza Certa - Faxina Profissional em Cuiabá" class="logo-full">
 
-    <h1>Faxina Profissional em Cuiabá</h1>
-    <p>
-      Diarista e limpeza residencial em Cuiabá e Várzea Grande.<br>
-      Profissionais confiáveis e atendimento rápido.
-    </p>
-    
-    <div>
-      <a href="https://wa.me/55SEUNUMERO" class="btn btn-whatsapp">
-        Agendar pelo WhatsApp
-      </a>
-      <a href="tel:+5565SEUNUMERO" class="btn btn-white">
-        Ligar Agora
-      </a>
+  <div class="header-content">
+    <div class="container">
+      <h1>Faxina Profissional em Cuiabá</h1>
+      <p>
+        Diarista e limpeza residencial em Cuiabá e Várzea Grande.<br>
+        Profissionais confiáveis e atendimento rápido.
+      </p>
+      
+      <div>
+        <a href="https://wa.me/55SEUNUMERO" class="btn btn-whatsapp">
+          Agendar pelo WhatsApp
+        </a>
+        <a href="tel:+5565SEUNUMERO" class="btn btn-white">
+          Ligar Agora
+        </a>
+      </div>
     </div>
   </div>
 </header>
