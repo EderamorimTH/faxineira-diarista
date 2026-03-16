@@ -37,54 +37,32 @@ padding:0 20px;
 /* HEADER */
 
 header{
-position:relative;
-height:520px;
-display:flex;
-align-items:center;
-justify-content:center;
+background:linear-gradient(135deg,#00aaff,#0077cc);
 text-align:center;
 color:white;
-overflow:hidden;
+padding:40px 20px 80px;
 }
 
-/* logo ocupando todo header */
+/* LOGO */
 
-header img{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-object-fit:cover;
+.logo{
+width:280px;
+max-width:80%;
+margin-bottom:25px;
 }
 
-/* overlay escuro para texto aparecer */
-
-header::after{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.45);
-}
-
-/* conteúdo */
-
-.header-content{
-position:relative;
-z-index:2;
-}
+/* TITULO */
 
 header h1{
-font-size:3rem;
-margin-bottom:20px;
+font-size:2.8rem;
+margin-bottom:15px;
 }
 
 header p{
-font-size:1.3rem;
-margin-bottom:30px;
+font-size:1.2rem;
+max-width:700px;
+margin:auto;
+margin-bottom:35px;
 }
 
 /* BOTÕES */
@@ -167,7 +145,7 @@ margin:auto;
 font-size:1.2rem;
 }
 
-/* AVALIAÇÕES */
+/* REVIEWS */
 
 .reviews{
 display:grid;
@@ -204,7 +182,7 @@ text-align:center;
 padding:40px;
 }
 
-/* WHATSAPP FIXO */
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -220,16 +198,12 @@ width:60px;
 
 @media(max-width:768px){
 
-header{
-height:420px;
-}
-
 header h1{
 font-size:2.2rem;
 }
 
-header p{
-font-size:1.1rem;
+.logo{
+width:200px;
 }
 
 }
@@ -242,9 +216,9 @@ font-size:1.1rem;
 
 <header>
 
-<img src="logol.png" alt="Limpeza Certa Faxina Cuiabá">
+<div class="container">
 
-<div class="header-content">
+<img src="logol.png" alt="Limpeza Certa Faxina Cuiabá" class="logo">
 
 <h1>Faxina Profissional em Cuiabá</h1>
 
